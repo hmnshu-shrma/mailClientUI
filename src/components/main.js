@@ -7,27 +7,33 @@ import Message from './rightcontainer/messages';
 
 class MainContainer extends Component {
 
-  constructor(props) {
+  constructor(props){
     super(props);
     this.state = {
-      MailsList:[]
-    }
+      data:'',
+      messageid:''
+    };
   }
-  handleData(data){
-    console.log(data)
-    this.setState({
-      MailsList:data
-    });
+  onDataReturn(jsonData){
+    setTimeout(()=>{
+      this.setState({ data:jsonData});
+    },0);
+    console.log(jsonData)
+  }
+  selectMailId(args) {
+    setTimeout(()=>{
+      this.setState({ messageid:args});
+    },0);
   }
 
   render() {
     return (
       <div className="mainContainer">
-      <LeftNav/>
+      <LeftNav jsonData = {this.onDataReturn.bind(this)}/>
       <div className="mailContainer">
       <TopNavbar/>
-      <MailsList mailData = {this.state.MailsList}/>
-      <Message/>
+      <MailsList selectMailId={this.selectMailId.bind(this)} categoryJson={this.state.data} />
+      <Message categoryJson={this.state.messageid} />
       </div>
       </div>
     );
