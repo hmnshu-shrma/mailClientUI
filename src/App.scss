@@ -1,10 +1,20 @@
+@import './styles/primary';
+@import './styles/leftnav';
+@import './styles/main';
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+}
+body{
+  background-color:#27323f;
+  @include font1();
+  color: #ffffff;
 }
 
 .App-header {

@@ -1,0 +1,25 @@
+@import './styles/leftnav';
+@import './styles/primary';
+@import './styles/mailCompose';
+@import './styles/right_container/navbar';
+@import './styles/right_container/maillist';
+@import './styles/right_container/messages';
+
+.mailContainer {
+    background: #fff;
+    color: #000;
+    width: 100%;
+    margin: 15px;
+    border-radius: 5px;
+    padding:0px 15px;
+}
+
+
+.list{
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 00px;
+}

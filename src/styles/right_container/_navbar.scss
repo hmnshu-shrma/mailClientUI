@@ -1,0 +1,35 @@
+@import 'search';
+.navbar__search__tabs{
+  display: flex;
+  margin-top: 12px;
+  border-bottom: 2px solid rgba(39, 50, 63, 0.59);
+  justify-content: space-between;
+  .tags {
+    display: flex;
+    &--label{
+      margin:0px;
+      color: #fff;
+      font-weight: 600;
+      padding: 4px 14px;
+      text-transform: uppercase;
+      cursor: pointer;
+      &.inbox{
+        background: #1094f6;
+        border-top-left-radius: 3px;
+      }
+      &.social{
+        background: #5a6e8f;
+      }
+      &.promotions{
+        background: #50617e;
+      }
+      &.spam{
+        background: #44526b;
+        border-top-right-radius: 3px;
+      }
+    }
+  }
+  .search__container {
+      margin: 0px 0px 0px 5px;
+  }
+}

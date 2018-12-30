@@ -1,0 +1,24 @@
+.messageList__container {
+    width: 20vw;
+    color: #444e5a;
+    display: inline-block;
+    height: 87vh;
+    overflow: auto;
+    .message_list {
+        border-bottom: #444e5a38 solid 1px;
+        background:#f6f8fa;
+        p{
+            margin:0px;
+        }
+        &--label {
+            font-size: 13px;
+            padding: 5px;
+        }
+        &--subject{
+            font-size: 14px;
+            padding: 5px;
+            font-weight: 500;
+            padding-top: 0px;
+        }
+    }
+}

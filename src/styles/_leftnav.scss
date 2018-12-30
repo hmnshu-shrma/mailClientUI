@@ -1,0 +1,33 @@
+.leftnav__container {
+    width: 150px;
+    background: #27323f;
+    height: 100vh;
+    .user__img{
+        width: 50px;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 0px;
+    }
+    .compose{
+        &__button{
+            background: #ff6650;
+            border: none;
+            padding: 4px;
+            border-radius: 2px;
+        }
+    }
+    .mail__options{
+        margin: 0px;
+        border-bottom: #707277 solid 1px;
+        margin-left: 3px;
+        &--label {
+            padding: 5px 0px 5px 15px;
+            margin-left: 5px;
+            border-radius: 4px;
+            &:hover{
+                background: #fff;
+                color: #27323f;
+            }
+        }
+    }
+}
